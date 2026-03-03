@@ -89,6 +89,7 @@ export interface MapEventMessage {
 
 export interface MapLayer {
   attribution?: string;
+  attributionPrefix?: string;
   baseLayer?: boolean;
   baseLayerIsChecked?: boolean;
   baseLayerName?: string;
@@ -102,6 +103,9 @@ export interface MapLayer {
   zIndex?: number;
   minZoom?: number;
   maxZoom?: number;
+  zoomControl?: boolean;
+  attributionControl?: boolean;
+  useMarkerClustering?: boolean;
 }
 
 export interface MapShape {
