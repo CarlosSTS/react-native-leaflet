@@ -78,6 +78,11 @@ export interface MapMarker {
   id?: string;
   size?: Point;
   title?: string;
+  iconStyle?: string;
+  titleStyle?: string;
+  tooltipStyle?: string;
+  tooltipTipStyle?: string;
+  closeButtonStyle?: string;
 }
 
 export interface MapEventMessage {
@@ -152,4 +157,9 @@ export interface OwnPositionMarker {
   position: LatLng;
   size: Point;
   title: string;
+  iconStyle?: string;
+  titleStyle?: string;
+  tooltipStyle?: string;
+  tooltipTipStyle?: string;
+  closeButtonStyle?: string;
 }
